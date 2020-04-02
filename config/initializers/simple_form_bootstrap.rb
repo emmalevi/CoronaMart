@@ -15,7 +15,7 @@
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
   # Default class for buttons
-  config.button_class = 'btn'
+  config.button_class = "btn btn-primary btn-lg w-100"
 
   # Define the default class of the input wrapper of the boolean input.
   config.boolean_label_class = 'form-check-label'
@@ -100,7 +100,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical file input
-  config.wrappers :vertical_file, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :vertical_file, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -113,7 +113,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical multi select
-  config.wrappers :vertical_multi_select, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :vertical_multi_select, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label
@@ -125,7 +125,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical range input
-  config.wrappers :vertical_range, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :vertical_range, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :readonly
@@ -273,7 +273,7 @@ SimpleForm.setup do |config|
   # bootstrap custom forms
   #
   # custom input for boolean
-  config.wrappers :custom_boolean, tag: 'fieldset', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_boolean, tag: 'fieldset', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :form_check_wrapper, tag: 'div', class: 'custom-control custom-checkbox' do |bb|
@@ -285,7 +285,7 @@ SimpleForm.setup do |config|
   end
 
   # custom input switch for boolean
-  config.wrappers :custom_boolean_switch, tag: 'fieldset', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_boolean_switch, tag: 'fieldset', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :form_check_wrapper, tag: 'div', class: 'custom-control custom-switch' do |bb|
@@ -297,7 +297,7 @@ SimpleForm.setup do |config|
   end
 
   # custom input for radio buttons and check boxes
-  config.wrappers :custom_collection, item_wrapper_class: 'custom-control', item_label_class: 'custom-control-label', tag: 'fieldset', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_collection, item_wrapper_class: 'custom-control', item_label_class: 'custom-control-label', tag: 'fieldset', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :legend_tag, tag: 'legend', class: 'col-form-label pt-0' do |ba|
@@ -309,7 +309,7 @@ SimpleForm.setup do |config|
   end
 
   # custom input for inline radio buttons and check boxes
-  config.wrappers :custom_collection_inline, item_wrapper_class: 'custom-control custom-control-inline', item_label_class: 'custom-control-label', tag: 'fieldset', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_collection_inline, item_wrapper_class: 'custom-control custom-control-inline', item_label_class: 'custom-control-label', tag: 'fieldset', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :legend_tag, tag: 'legend', class: 'col-form-label pt-0' do |ba|
@@ -321,7 +321,7 @@ SimpleForm.setup do |config|
   end
 
   # custom file input
-  config.wrappers :custom_file, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_file, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -337,7 +337,7 @@ SimpleForm.setup do |config|
   end
 
   # custom multi select
-  config.wrappers :custom_multi_select, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_multi_select, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label
@@ -349,7 +349,7 @@ SimpleForm.setup do |config|
   end
 
   # custom range input
-  config.wrappers :custom_range, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  config.wrappers :custom_range, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :readonly
@@ -363,7 +363,7 @@ SimpleForm.setup do |config|
 
   # Input Group - custom component
   # see example app and config at https://github.com/rafaelfranca/simple_form-bootstrap
-  # config.wrappers :input_group, tag: 'div', class: 'form-group', error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
+  # config.wrappers :input_group, tag: 'div', class: "col-6 form-group", error_class: 'form-group-invalid', valid_class: 'form-group-valid' do |b|
   #   b.use :html5
   #   b.use :placeholder
   #   b.optional :maxlength
