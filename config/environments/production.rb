@@ -58,7 +58,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "Coronair_production"
+  # config.active_job.queue_name_prefix = "CoronaMart_production"
 
   config.action_mailer.perform_caching = false
 
@@ -89,7 +89,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'https://coronair.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'https://coronamart.herokuapp.com'}
 
 
   # Inserts middleware to perform automatic connection switching.
