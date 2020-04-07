@@ -21,7 +21,9 @@ def edit
 end
 
 def create
+
   @item = Item.new(item_params)
+  @item.user = current_user
   if @item.save
     redirect_to item_path(@item)
   else
@@ -41,6 +43,6 @@ def set_item
 end
 
 def item_params
-  params.require(:item).permit(:name, :description)
+  params.require(:item).permit(:name, :description, :price, :picture_url)
   end
 end
