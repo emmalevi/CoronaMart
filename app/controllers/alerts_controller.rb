@@ -1,0 +1,1 @@
+alerts_controller.rb
